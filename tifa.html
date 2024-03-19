@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <link rel="icon" href="favicon-32x32.png" type="image/png">
+    <link rel="stylesheet" href="style.css">
+    <title>FF7 Character Guide</title>
+</head>
+
+<body>
+    <div class="navbar">
+        <!-- Home button on the left -->
+        <img src="images/aerithsq.png" alt="aerith">
+        <a href="index.html">Home</a>
+        <a href="compare.html">Compare Stats</a>
+        <div class="dropdown">
+            <button class="dropbtn">Characters</button>
+            <div class="dropdown-content">
+                <a href="cloud.html">Cloud</a>
+                <a href="tifa.html">Tifa</a>
+                <a href="barret.html">Barret</a>
+                <a href="aerith.html">Aerith</a>
+            </div>
+        </div>
+    </div>
+    <div class="title">
+        <h1>Questions For Your Ideal <span style="color: #dc143c">Tifa</span> Build</h1>
+    </div>
+    <div class="form-container">
+        <form id="quiz" action="tifa_build.php" method="get">
+            <div id="q1">
+                <div class="label-container">
+                    <p>Physical Attack</p>
+                    <p>Both</p>
+                    <p>Magic Attack</p>
+                </div>
+                <div class="circle-container">
+                    <input type="radio" id="agree" value="phys" name="q1a"required>
+                    <input type="radio" id="neutral" value="both" name="q1a"required>
+                    <input type="radio" id="disagree" value="magic" name="q1a"required>
+                </div>
+            </div>
+            <div id="q5">
+                <div class="label-container">
+                    <p>High HP</p>
+                    <p>A little of both</p>
+                    <p>High MP</p>
+                </div>
+                <div class="circle-container">
+                    <input type="radio" id="agree" value="hp" name="q5a"required>
+                    <input type="radio" id="neutral" value="both" name="q5a"required>
+                    <input type="radio" id="disagree" value="mp" name="q5a"required>
+                </div>
+            </div>
+            <div id="q2">
+                <div class="label-container">
+                    <p>Would you trade HP for more criticals? (Y or N)</p>
+                </div>
+                <div class="circle-container">
+                    <input type="radio" id="agree" value="y" name="q2a"required>
+                    <input type="radio" id="disagree" value="n" name="q2a"required>
+                </div>
+            </div>
+            <div id="q3">
+                <div class="label-container">
+                    <p>Would you trade stats for faster ATB (Y or N)</p>
+                </div>
+                <div class="circle-container">
+                    <input type="radio" id="agree" value="y" name="q3a"required>
+                    <input type="radio" id="disagree" value="n" name="q3a"required>
+                </div>
+            </div>
+            <div id="q4">
+                <div class="label-container">
+                    <p>Do you want limit gauge to fill faster (Y or N)</p>
+                </div>
+                <div class="circle-container">
+                    <input type="radio" id="agree" value="y" name="q4a" required>
+                    <input type="radio" id="disagree" value="n" name="q4a" required>
+                </div>
+            </div>
+            <div id="q6">
+                <div class="label-container">
+                    <p>Would you trade materia for higher stats (Y or N)</p>
+                </div>
+                <div class="circle-container">
+                    <input type="radio" id="agree" value="y" name="q6a" required>
+                    <input type="radio" id="disagree" value="n" name="q6a" required>
+                </div>
+            </div>
+            <div id="q7">
+                <div class="label-container">
+                    <p>Do you use elemental materia (Y or N)</p>
+                </div>
+                <div class="circle-container">
+                    <input type="radio" id="agree" value="y" name="q6a" required>
+                    <input type="radio" id="disagree" value="n" name="q6a" required>
+                </div>
+            </div>
+            <br>
+            <input class="btn" type="submit" value="Get Build">
+        </form>
+            
+    </div>
+    
+
+</body>
+
+</html>
